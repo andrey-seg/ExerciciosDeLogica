@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;      /* dvh evita o bug da barra do navegador no celular */
+  display: grid;
+  place-items: center;     /* centraliza vertical e horizontal */
+  padding: 1rem;           /* respiro nas bordas em telas pequenas */
+  background: linear-gradient(135deg, #1e3c2f 0%, #2f6b4f 45%, #86b17a 100%);
+  background-attachment: fixed;
+}
