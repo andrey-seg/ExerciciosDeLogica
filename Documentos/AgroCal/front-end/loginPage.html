@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login agroCal</title>
+    <link rel="stylesheet" href="./styles/colors/token.css">
     <link rel="stylesheet" href="./styles/global/body.css">
     <link rel="stylesheet" href="./styles/glassmorpism/glass.css">
     <link rel="stylesheet" href="./styles/login/loginContainer.css">
+    <link rel="stylesheet" href="./styles/buttons/neu-button.css">
+    <link rel="stylesheet" href="./styles/checkBox/checkBox.css">
 </head>
 <body>
     
@@ -36,11 +39,13 @@
                     required
                     />
 
-                <label>
-                <input type="checkbox" name="remember" /> Lembrar de mim
+                <label class="container">
+                    <input type="checkbox" name="remember">
+                    <span class="checkmark"></span>
+                    Lembrar de mim
                 </label>
 
-                <button type="submit">Entrar</button>
+                    <button class="button2" type="submit">Entrar</button>
 
                 <a href="/recuperar-senha">Esqueci minha senha</a>
             </form>

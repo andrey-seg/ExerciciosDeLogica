@@ -1,0 +1,88 @@
+/* src/styles/tokens.css
+   Fonte única da verdade do visual da calculadora agrícola.
+   Carregue este arquivo ANTES dos demais. */
+
+:root {
+  /* ==========================================================
+     1. PALETA BASE (valores brutos, nomeados pela cor)
+     ========================================================== */
+  --dust-grey:    #dad7cd;
+  --dry-sage:     #a3b18a;
+  --fern:         #588157;
+  --hunter-green: #3a5a40;
+  --pine-teal:    #344e41;
+
+  /* Auxiliares para texto e vidro (derivados da paleta) */
+  --pine-teal-deep: #1f2f27;   /* versão mais escura do Pine Teal, para o fundo */
+  --white:          #ffffff;
+
+  /* ==========================================================
+     2. TOKENS SEMÂNTICOS (o que a cor significa)
+     ========================================================== */
+
+  /* Fundo da página */
+  --color-bg:            var(--pine-teal-deep);
+  --color-bg-gradient:   linear-gradient(
+                           135deg,
+                           var(--pine-teal) 0%,
+                           var(--hunter-green) 55%,
+                           var(--fern) 100%
+                         );
+
+  /* Ação principal (botões, links, foco) */
+  --color-primary:        var(--fern);
+  --color-primary-hover:  var(--hunter-green);
+  --color-primary-active: var(--pine-teal);
+  --color-accent:         var(--dry-sage);
+
+  /* Texto */
+  --color-text:           var(--dust-grey);
+  --color-text-strong:    var(--white);
+  --color-text-muted:     var(--dry-sage);
+  --color-text-on-primary: var(--white);
+
+  /* Campos de formulário */
+  --color-input-bg:       rgb(218 215 205 / 0.10);
+  --color-input-border:   rgb(218 215 205 / 0.30);
+  --color-input-focus:    var(--dry-sage);
+  --color-placeholder:    rgb(218 215 205 / 0.55);
+
+  /* Feedback (erro não existe na paleta, então é um token à parte) */
+  --color-error:          #e5806b;
+  --color-success:        var(--dry-sage);
+
+  /* ==========================================================
+     3. GLASSMORPHISM
+     ========================================================== */
+  --glass-bg:        rgb(218 215 205 / 0.12);
+  --glass-bg-strong: rgb(218 215 205 / 0.20);
+  --glass-border:    rgb(218 215 205 / 0.28);
+  --glass-blur:      blur(16px) saturate(140%);
+  --glass-shadow:    0 8px 32px rgb(31 47 39 / 0.45);
+
+  /* ==========================================================
+     4. TIPOGRAFIA
+     ========================================================== */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: clamp(1.25rem, 3vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 4vw, 2rem);
+
+  /* ==========================================================
+     5. ESPAÇAMENTO, RAIOS E TRANSIÇÕES
+     ========================================================== */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+
+  --transition-fast: 150ms ease;
+}

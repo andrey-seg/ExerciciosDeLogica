@@ -6,11 +6,11 @@
 
 .card {
     width: 340px;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     text-align: center;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s;
+    transition: transform var(--transition-fast);
 }
 
 .card:hover {
@@ -20,52 +20,48 @@
 .card form {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-3);
 }
 
 .card h1 {
-    margin: 0 0 0.5rem;
-    color: #fff;
+    margin: 0 0 var(--space-2);
+    color: var(--color-text-strong);
 }
 
 .card label {
     text-align: left;
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-sm);
+    color: var(--color-text);
 }
 
 .card input[type="email"],
 .card input[type="password"] {
     width: 100%;
     padding: 0.65rem 0.75rem;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-input-border);
+    background: var(--color-input-bg);
+    color: var(--color-text-strong);
     outline: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card input[type="email"]:focus,
+.card input[type="password"]:focus {
+    border-color: var(--color-input-focus);
+    box-shadow: 0 0 0 3px rgb(163 177 138 / 0.25);
 }
 
 .card input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.card button {
-    margin-top: 0.5rem;
-    padding: 0.7rem;
-    border: none;
-    border-radius: 10px;
-    background: #2f6b4f;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.card button:hover {
-    background: #245741;
+    color: var(--color-placeholder);
 }
 
 .card a {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.85rem;
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    transition: color var(--transition-fast);
+}
+
+.card a:hover {
+    color: var(--color-text-strong);
 }
