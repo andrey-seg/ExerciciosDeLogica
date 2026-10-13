@@ -1,9 +1,12 @@
 /* From Uiverse.io by amir_6539 */ 
 .container {
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
   background: radial-gradient(ellipse at bottom, var(--pine-teal) 0%, var(--pine-teal-big-deep) 100%);
   overflow: hidden;
+  z-index: -1;
 }
 
 #stars {
