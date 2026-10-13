@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  min-height: 100dvh;      /* dvh evita o bug da barra do navegador no celular */
+  display: grid;
+  place-items: center;     /* centraliza vertical e horizontal */
+  padding: var(--space-4); /* respiro nas bordas em telas pequenas */
+  background: var(--color-bg);
+  background-image: var(--color-bg-gradient);
+  background-attachment: fixed;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+
+  /*Background*/
+
+  background-image: url("../../imgs/backGrounds/pexels-clinton-weaver-143462690-38740387-otimizado.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--color-bg); /* cor de reserva enquanto a imagem carrega */
+}

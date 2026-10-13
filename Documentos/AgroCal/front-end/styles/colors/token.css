@@ -13,7 +13,8 @@
   --pine-teal:    #344e41;
 
   /* Auxiliares para texto e vidro (derivados da paleta) */
-  --pine-teal-deep: #1f2f27;   /* versão mais escura do Pine Teal, para o fundo */
+  --pine-teal-deep: #1f2f27; /* versão mais escura do Pine Teal, para o fundo */
+  --pine-teal-big-deep: #0e1512; /* versão extremamente escura para uso em calculator list*/
   --white:          #ffffff;
 
   /* ==========================================================
